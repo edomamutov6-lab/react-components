@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+:root { font: 17px/1.55 system-ui, sans-serif; color: #17243a; background: #f4f6fa; }
+body { margin: 0; }
+header { background: #17243a; }
+nav, main, footer { width: min(1080px, 92%); margin: auto; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; padding: 1rem 0; }
+nav a { color: white; text-underline-offset: .25em; }
+main > section { margin: 3rem 0; }
+h1 { font-size: clamp(2.4rem, 7vw, 4.7rem); line-height: 1.05; letter-spacing: -.06em; margin: .5rem 0 1.25rem; }
+h2 { line-height: 1.2; }
+h3 { margin-top: 0; }
+.intro > p { max-width: 64ch; }
+.highlight { background: #e3ebff; border-left: 4px solid #285ac6; padding: .15rem 1.2rem; margin-top: 1.5rem; border-radius: .5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr)); gap: 1rem; }
+.panel { height: 100%; background: white; border: 1px solid #d1d9e5; border-radius: .75rem; padding: 1.2rem; overflow-wrap: anywhere; }
+.panel.active { border-top: 4px solid #167653; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .65rem; }
+button, input { font: inherit; border: 1px solid #6e7e99; border-radius: .4rem; padding: .35rem .7rem; }
+button { background: white; color: #17243a; cursor: pointer; }
+button[aria-pressed="true"] { background: #244bad; color: white; }
+input { display: block; width: 100%; background: #fff; }
+output { font-size: 1.6rem; }
+.students { padding: 0; list-style: none; }
+details { background: white; border: 1px solid #d1d9e5; border-radius: .6rem; margin: .6rem 0; padding: .7rem 1rem; }
+summary { cursor: pointer; font-weight: 650; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #edf1f8; border-radius: .4rem; padding: .7rem; }
+footer { border-top: 1px solid #d1d9e5; padding: 1.2rem 0 2rem; }
